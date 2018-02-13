@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Adrian Fish">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>StreetArt Finder</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
 	<!--
 	* Author: Adrian Fish
 	* Assignment: FDWM2 – Web Application Build
@@ -25,37 +26,35 @@
 	* Date: 2018/02/03
 	* Ref: website link to code referenced or the book, authors name and page number
 	  http://jsfiddle.net/KyleMit/esm3jssy/ - for the NumberCircle class
-	  Gary Rubio Pic - licensed images from https://www.devexpress.com/ 
+	  https://www.devexpress.com/ - Gary Rubio Pic - licensed images from 
+	  https://www.w3schools.com/bootstrap/bootstrap_modal.asp and https://codepen.io/dimbslmh/full/mKfCc - for help on the modal and centering
+	 
 	-->
   </head>
   <body>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-					<a href="index.html">
-						<img class="img-responsive" src="images/streetart-logo.png" alt="streetfinder logo" >
-					</a>
-				</div>
-				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" >				
-					<div class="box pull-right">					
-						
-						<h2>
-						<a href="">
-							<img src="images/GaryRubio.jpg" alt="Gary Rubio profile pic" class="profile-image img-circle " >
-						</a>Username</h2>
-					</div>
-					
-				</div>
+		<div class="header-content">		
+			<div class="logo">
+				<a href="index.html">
+					<img class="img-responsive" src="images/streetart-logo.png" alt="streetfinder logo" >
+				</a>
+			</div>
+			<div style="border:2px solid green" >				
+				
+				<h2>
+				<a href="">
+					<img src="images/GaryRubio.jpg" alt="Gary Rubio profile pic" class="profile-image img-circle " >
+				</a>Username</h2>
+				
+			</div>
 			</div>				
-		</div>		
+		</div>	<!-- end header content -->	
 		
 				
-	</header>
-	<div class="container">
-		
-		<div class="row">
-			<div class="carousel slide" id="carousel-example" data-ride="carousel">				
+	</header> <!-- end header -->
+	<div class="container">		
+		<div class="row" >
+			<div class="carousel slide" style="border:2px;solid purple;" id="carousel-example" data-ride="carousel">				
 				<div class="carousel-inner">
 					<div class="item active">
 						<img src="images/facial-2089059_1280.jpg" alt="Facial">
@@ -118,26 +117,148 @@
 			
 		</div> <!--end of row2-->
 		<div class="row">
-			<section class="col-md-6 box text-left">
-				<div>
-					<img src="images/stu_ungar.jpg" alt="" style="width:100%; height:200px;">
-					<button class="btn btn-info caption">Share</button>
-				</div>
-				<div>
-					<h1>Cool Vista</h1>
-					<button class="btn btn-default">Location</button>
-					<button class="btn btn-default">#Hashtag</button>
-					<p>Stu Unger is one of the biggest superstars to have
-						immerged from the professional poker world. Besides
-						being a true poker genius and a three time World Series
-						of Poker champion, Stu Unger had a fascinating life
-						story. It was not surprising that after his death Stu was
-						the subject of a biography and a biopic. Stu Unger lived</p>
-				</div>			
-			</section>
+			<article class="col-md-6">
+				<div class="article-content-box">
+					<header>				
+						<img src="images/stu_ungar.jpg" alt="Stu Ungar Bio" >
+						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-toggle="modal" data-target="#myModal">Share</button>
+					</header>
+				
+					<div class="article-body">
+						<h1>Cool Vista</h1>
+						<button  class="btn btn-warning btn-lg">Location</button>
+						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<p>Stu Unger is one of the biggest superstars to have
+							immerged from the professional poker world. Besides
+							being a true poker genius and a three time World Series
+							of Poker champion, Stu Unger had a fascinating life
+							story. It was not surprising that after his death Stu was
+							the subject of a biography and a biopic. Stu Unger lived</p>
+					</div>		
+				</div>				
+			</article>
+			<article class="col-md-6">
+				<div class="article-content-box">
+					<header>				
+						<img src="" alt="Political Satire" >
+						<button type="button" class="btn btn-primary btn-lg">Share</button>
+					</header>
+				
+					<div class="article-body">
+						<h1>Political Satire</h1>
+						<button  class="btn btn-warning btn-lg">Location</button>
+						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<p>Gas prices are soaring! This has resulted in elevated
+							travel expenses. If you travel by car, YOU have some
+							control over the costs.</p>
+						<p>Here are some ways to save money on gas:</p>
+					</div>		
+				</div>				
+			</article>
 		</div>
-	</div>
-    
+		<div class="row">
+			<article class="col-md-6">
+				<div class="article-content-box">
+					<header>				
+						<img src="" alt="Buenos Aires Bunny" >
+						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-toggle="modal" data-target="#myModal">Share</button>
+					</header>
+				
+					<div class="article-body">
+						<h1>Buenos Aires Bunny</h1>
+						<button  class="btn btn-warning btn-lg">Location</button>
+						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<p>It is not always possible to jet off half way around the
+							world when you and your significant other are wishing
+							to go off on a private and romantic getaway. The great
+							news is that you don’t have to spend a lot of money or
+							go very far to get away from everyone and everything.
+							You can find cheap romantic vacations nearby, and you</p>
+					</div>		
+				</div>				
+			</article>
+			<article class="col-md-6">
+				<div class="article-content-box">
+					<header>				
+						<img src="" alt="Madrid Master" >
+						<button type="button" class="btn btn-primary btn-lg">Share</button>
+					</header>
+				
+					<div class="article-body">
+						<h1>Madrid Master</h1>
+						<button  class="btn btn-warning btn-lg">Location</button>
+						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<p>“IT” (otherwise known as HD 36405.b) isn’t your
+							average “oddball” exo-solar planet made of rock that
+							wobbles on its end & zips around a nearby star in less
+							than 2.46 days.</p>
+						<p>Seeking a spot of serenity somewhere in the universe, I</p>
+					</div>		
+				</div>				
+			</article>
+		</div>
+	</div>	
+	<section class="upload">
+		<h1 class="text-center">Upload</h1>
+		<div class="container">
+			<div>
+				<h1>How To</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, beatae, sapiente ut explicabo cum ullam optio 
+					aliquid voluptatum perspiciatis voluptatem dolor iusto labore maxime! Ipsam, obcaecati, hic, illum architecto officia
+					laudantium excepturi ad placeat tenetur inventore eligendi earum accusantium quibusdam quam nihil dolorum aliquid 
+					id perferendis laborum autem exercitationem debitis sed quaerat eum corporis ipsum sint ullam cupiditate porro vel 
+					ab libero nostrum blanditiis quae illo animi voluptas distinctio tempore amet nesciunt cumque repellat totam aperiam 
+					magni numquam omnis nulla dolor expedita odio natus. Quidem, autem, aspernatur, consequatur, natus vero rerum possimus
+					adipisci ullam aliquid laborum dignissimos nisi deserunt repudiandae.</p>
+			</div>
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+				<h3 class="panel-title text-center">Upload here</h3>
+			  </div>
+			  <div class="panel-body">
+				<label for="first_name">First name</label>
+				<br/>
+				<input type="text" name="first_name" id="first_name">
+				<br/>
+				<label for="hashtag">Hashtag</label>
+				<br/>
+				<input type="text" name="hashtag" id="hashtag">
+				<br/>
+				<div class="text-center" style="border: 1px dotted red;width:50px; height:50px;">
+					<a href=""><span class="glyphicon glyphicon-camera" >Upload image</a>
+				</div>
+				<button class="btn btn-primary " style="width:100%" >Upload</button>
+
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	
+	<article id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h1 class="modal-title">Modal Header</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Some text in the modal.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</article>
+
+    <!-- <article class="modal"> -->
+			<!-- <h1>Share Cool Vista</h1> -->
+	<!-- </article> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
