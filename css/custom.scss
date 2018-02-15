@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary_color: #ffffff;
+$font_stack: "Roboto", "ariel", "times new roman", "sans-serif";
+
+body{
+	color: $primary_color;
+	max-width: 1280px;
+	font: 600 normal 1.6em $font_stack;
+	
+	/* background: rgb(240,183,161); */
+/* background: -moz-linear-gradient(top, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 100%); */
+/* background: -webkit-linear-gradient(top, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%); */
+/* background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%); */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); */
+}
+
+header{	
+	max-height:20rem;
+	/* margin: 0 0 20px 0; */
+	width: 100%;
+	/* padding:30px; */
+}
+
+.header-content{
+	border:2px solid red;
+	display:flex;
+	flex-flow:row;
+	justify-content: space-between;		
+}
+
+.header-profile{
+	width: 30%;
+}
+
+
+.logo{	
+	border:2px solid orange;
+	
+	margin-left: 3em;
+	
+	width:40%;
+	height:200px;
+
+	
+}
+
+button {
+	text-transform:uppercase;
+}
+
+
+.box{
+	/* background:#fcfcfc; */
+	padding:20px;
+	margin:0 0 20px 0;
+	/* border:1px solid #eeeeee; */
+	height:200px;
+	text-align:center;
+	
+	p {
+		font-size: .9em;
+	}
+	
+	.glyphicon {
+		font-size:4em;
+		color:#05a3cf;
+	}
+	
+	:hover{
+	/* background: #FDF9F3; */
+	}
+}
+
+.circle {
+	border-radius: 50%;
+    /* behavior: url(PIE.htc); /* remove if you don't care about IE8 */ 
+    width: 2em;
+    height: 2em;
+    padding: 12px;
+	background: #fff;
+	color: #0000f2;
+	border: 2px solid black;
+	text-align: center;	
+	font-size:2em;
+}
+
+.number {	
+    font: 2em Verdana, sans-serif;
+    display: inline-block;
+}
+
+.profile-image{	
+	/* margin-right: 5px; */
+	padding: 20px;
+    /* float: left;        */
+    width: 120px;
+    height: 120px;	
+}
+
+.modal {	
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+	
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-header{
+	background-color: #fff;
+}
+.modal-content{
+	background-color: red;
+}
+
+article{	
+	/* height: 35em; */
+	margin:2em 0 auto;
+}
+
+.article-content-box{
+	height: 32em;	
+	border: 1px solid blue;
+}
+
+article header{	
+	height: 45%;
+	display:inline-block;
+	position:relative;	
+}
+
+
+
+.article-content-box .glyphicon {
+	font-size:10em;	
+	color:#05a3cf;		
+}
+
+article header button {
+	position:absolute;
+	right:5%;
+	bottom:5%;
+}
+
+article p{
+	padding-top: .5em;	
+	
+	
+}
+
+.article-body{	
+	
+	height: 55%;
+	margin: 0 auto;	
+	color: #000;
+	overflow: hidden;
+	padding:0 1.6em 0 1.6em ;	
+	background: rgb(212,228,239);
+background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
+}
+
+.upload{
+	border: 2px solid red;
+	background-color: #000;
+	margin: 0 auto;
+	padding:20px;
+}
+
+.upload .container{
+	display:flex;
+	flex-flow:row;
+	width: 100%;
+	/* height: 300px; */
+	border: 2px solid orange;
+	margin:2em;
+}
+
+footer{
+	height: 20rem;
+	background-color: #000;
+}
+
+footer container{
+	border:2px solid yrllow;
+	width:100%;
+	margin: 0 auto;
+}
+
+.carousel,
+.item,
+.active {
+    /* height: 100%; */
+	width: 100%;
+    /* margin-bottom: 60px; */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
