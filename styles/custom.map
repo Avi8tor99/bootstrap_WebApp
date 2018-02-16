@@ -1,0 +1,36 @@
+{
+	"version": 3,
+	"file": "scss/custom.css",
+	"sources": [
+		"scss/custom.scss",
+		"scss/custom/_variables.scss",
+		"scss/custom/_mixins.scss",
+		"scss/custom/_normalize.scss",
+		"scss/custom/_base.scss",
+		"scss/custom/_typography.scss",
+		"scss/custom/_blocks.scss",
+		"scss/custom/_buttons.scss",
+		"scss/custom/_sections.scss",
+		"scss/custom/_components.scss",
+		"scss/custom/_nav.scss",
+		"scss/custom/_header.scss",
+		"scss/custom/_footer.scss"
+	],
+	"sourcesContent": [
+		"\r\n/* Sass Theme */\r\n/* Author: Adrian Fish */\r\n/* Version: 1.0 */\r\n\r\n/* import google font */\r\n@import url('https://fonts.googleapis.com/css?family=Roboto');\r\n/* Base - base styles, variables, mixins */\r\n@import 'custom/_variables.scss';\r\n@import 'custom/_mixins.scss';\r\n@import 'custom/_normalize.scss';\r\n@import 'custom/_base.scss';\r\n\r\n/* Modules - Individual site components */\r\n@import 'custom/_typography.scss';\r\n@import 'custom/_blocks.scss';\r\n@import 'custom/_buttons.scss';\r\n@import 'custom/_sections.scss';\r\n@import 'custom/_components.scss';\r\n\r\n\r\n/* Layouts - Page layout styles */\r\n@import 'custom/_nav.scss';\r\n@import 'custom/_header.scss';\r\n@import 'custom/_footer.scss';\r\n\r\n",
+		"$base-color: #666666;\r\n$base-font-stack: \"Roboto\", \"ariel\", \"times new roman\", \"sans-serif\";\r\n$base-font-size: 15px;\r\n$number-font-stack: \"Verdana\", \"times new roman\", sans serif;\r\n$number-font-size:  2em;\r\n\r\n/* Background colours */\r\n$Primary-color:#00aff0;\r\n$Secondary-color:00aff0;",
+		"",
+		"/* resetting styles */",
+		"body{\r\n\tcolor: $base-color;\r\n\tmax-width: 1280px;\r\n\tfont: 600 normal $base-font-size $base-font-stack;\r\n\tline-height: 1.4em;\r\n\t\r\n\t/* background: rgb(240,183,161); */\r\n/* background: -moz-linear-gradient(top, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 100%); */\r\n/* background: -webkit-linear-gradient(top, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%); */\r\n/* background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%); */\r\n/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); */\r\n}\r\n\r\nbutton {\r\n\ttext-transform:uppercase;\r\n}\r\n\r\n.number {\t\r\n    font: $number-font-size $number-font-stack;\r\n   \r\n}",
+		"",
+		".box{\r\n\t/* background:#fcfcfc; */\r\n\tpadding:20px;\r\n\tmargin:0 0 20px 0;\r\n\t/* border:1px solid #eeeeee; */\r\n\theight:200px;\r\n\ttext-align:center;\r\n\t\r\n\tp {\r\n\t\tfont-size: .9em;\r\n\t}\r\n\t\r\n\t.glyphicon {\r\n\t\tfont-size:4em;\r\n\t\tcolor:#05a3cf;\r\n\t}\r\n\t\r\n\t:hover{\r\n\t/* background: #FDF9F3; */\r\n\t}\r\n}\r\n\r\n.circle {\r\n\tborder-radius: 50%;\r\n    /* behavior: url(PIE.htc); /* remove if you don't care about IE8 */ \r\n    width: 2em;\r\n    height: 2em;\r\n    padding: 12px;\r\n\tbackground: #fff;\r\n\tcolor: #0000f2;\r\n\tborder: 2px solid black;\r\n\ttext-align: center;\t\r\n\tfont-size:2em;\r\n}\r\n\r\n.number {\t\r\n    font: 2em Verdana, sans-serif;\r\n    //display: inline-block;\r\n}",
+		"",
+		"",
+		".modal {\t\r\n  text-align: center;\r\n  padding: 0!important;\r\n}\r\n\r\n.modal:before {\r\n  content: '';\r\n  display: inline-block;\r\n  height: 100%;\r\n  vertical-align: middle;\r\n  margin-right: -4px;\r\n}\r\n\r\n.modal-dialog {\r\n\t\r\n  display: inline-block;\r\n  text-align: left;\r\n  vertical-align: middle;\r\n}\r\n.modal-header{\r\n\tbackground-color: #fff;\r\n}\r\n.modal-content{\r\n\tbackground-color: red;\r\n}",
+		"",
+		"header{\t\r\n\tmax-height:20rem;\r\n\t/* margin: 0 0 20px 0; */\r\n\twidth: 100%;\r\n\t/* padding:30px; */\r\n\t\r\n\t\r\n}\r\n\r\n.header-content{\r\n\tborder:2px solid red;\r\n\tdisplay:flex;\r\n\tflex-flow:row;\r\n\tjustify-content: space-between;\t\t\r\n}\r\n\r\n.header-profile{\r\n\twidth: 30%;\r\n}\r\n\r\n.profile-image{\t\r\n\t/* margin-right: 5px; */\r\n\tpadding: 20px;\r\n    /* float: left;        */\r\n    width: 120px;\r\n    height: 120px;\t\r\n}\r\n\r\n.logo{\t\r\n\tborder:2px solid orange;\r\n\t\r\n\tmargin-left: 3em;\r\n\t\r\n\twidth:40%;\r\n\theight:200px;\r\n\r\n\t\r\n}",
+		""
+	],
+	"mappings": "AACA,gBAAgB;AAChB,yBAAyB;AACzB,kBAAkB;AAElB,wBAAwB;AACxB,OAAO,CAAC,qDAAI;AACZ,2CAA2C;ACD3C,wBAAwB;AENxB,sBAAsB;;ACAtB,AAAA,IAAI,CAAA;EACH,KAAK,EHDO,OAAO;EGEnB,SAAS,EAAE,MAAO;EAClB,IAAI,EAAE,GAAG,CAAC,MAAM,CHDA,IAAI,CADH,QAAQ,EAAE,OAAO,EAAE,iBAAiB,EAAE,YAAY;EGGnE,WAAW,EAAE,KAAM;EAEnB,mCAAmC;EACpC,0IAA0I;EAC1I,0IAA0I;EAC1I,wIAAwI;EACxI,0HAA0H;CACzH;;;AAED,AAAA,MAAM,CAAC;EACN,cAAc,EAAC,SAAU;CACzB;;;AAED,AAAA,OAAO,CAAC;EACJ,IAAI,EHdY,GAAG,CADH,SAAS,EAAE,iBAAiB,EAAE,IAAI,CAAC,KAAK;CGiB3D;;AJPD,0CAA0C;;AMb1C,AAAA,IAAI,CAAA;EACH,yBAAyB;EACzB,OAAO,EAAC,IAAK;EACb,MAAM,EAAC,UAAW;EAClB,+BAA+B;EAC/B,MAAM,EAAC,KAAM;EACb,UAAU,EAAC,MAAO;CAclB;;;AApBD,AAQC,IARG,CAQH,CAAC,CAAC;EACD,SAAS,EAAE,IAAK;CAChB;;;AAVF,AAYC,IAZG,CAYH,UAAU,CAAC;EACV,SAAS,EAAC,GAAI;EACd,KAAK,EAAC,OAAQ;CACd;;;AAfF,AAiBC,IAjBG,CAiBH,MAAM,CAAA;EACN,0BAA0B;CACzB;;;AAGF,AAAA,OAAO,CAAC;EACP,aAAa,EAAE,GAAI;EAChB,mEAAmE;EACnE,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,GAAI;EACZ,OAAO,EAAE,IAAK;EACjB,UAAU,EAAE,IAAK;EACjB,KAAK,EAAE,OAAQ;EACf,MAAM,EAAE,eAAgB;EACxB,UAAU,EAAE,MAAO;EACnB,SAAS,EAAC,GAAI;CACd;;;AAED,AAAA,OAAO,CAAC;EACJ,IAAI,EAAE,uBAAwB;CAEjC;;;AGtCD,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,MAAO;EACnB,OAAO,EAAE,CAAC,CAAA,UAAU;CACrB;;;AAED,AAAM,MAAA,AAAA,OAAO,CAAC;EACZ,OAAO,EAAE,EAAG;EACZ,OAAO,EAAE,YAAa;EACtB,MAAM,EAAE,IAAK;EACb,cAAc,EAAE,MAAO;EACvB,YAAY,EAAE,IAAK;CACpB;;;AAED,AAAA,aAAa,CAAC;EAEZ,OAAO,EAAE,YAAa;EACtB,UAAU,EAAE,IAAK;EACjB,cAAc,EAAE,MAAO;CACxB;;;AACD,AAAA,aAAa,CAAA;EACZ,gBAAgB,EAAE,IAAK;CACvB;;;AACD,AAAA,cAAc,CAAA;EACb,gBAAgB,EAAE,GAAI;CACtB;;ATHD,kCAAkC;;AWrBlC,AAAA,MAAM,CAAA;EACL,UAAU,EAAC,KAAM;EACjB,yBAAyB;EACzB,KAAK,EAAE,IAAK;EACZ,mBAAmB;CAGnB;;;AAED,AAAA,eAAe,CAAA;EACd,MAAM,EAAC,aAAc;EACrB,OAAO,EAAC,IAAK;EACb,SAAS,EAAC,GAAI;EACd,eAAe,EAAE,aAAc;CAC/B;;;AAED,AAAA,eAAe,CAAA;EACd,KAAK,EAAE,GAAI;CACX;;;AAED,AAAA,cAAc,CAAA;EACb,wBAAwB;EACxB,OAAO,EAAE,IAAK;EACX,yBAAyB;EACzB,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;CACjB;;;AAED,AAAA,KAAK,CAAA;EACJ,MAAM,EAAC,gBAAiB;EAExB,WAAW,EAAE,GAAI;EAEjB,KAAK,EAAC,GAAI;EACV,MAAM,EAAC,KAAM;CAGb",
+	"names": []
+}
