@@ -4,7 +4,9 @@ header{
 	width: 100%;
 	/* padding:30px; */
 	
-	
+	h2{
+		display:inline-block;
+	}
 }
 
 .header-content{
@@ -15,7 +17,9 @@ header{
 }
 
 .header-profile{
-	width: 30%;
+	width: 50%;
+	margin: 0 auto;
+	//padding: 3em;
 }
 
 .profile-image{	

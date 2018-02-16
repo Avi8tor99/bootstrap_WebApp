@@ -17,5 +17,9 @@ button {
 
 .number {	
     font: $number-font-size $number-font-stack;
-   
+   display: inline-block;
+}
+
+input, textarea, button {
+	@include border-radius(0px);
 }

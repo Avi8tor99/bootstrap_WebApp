@@ -23,3 +23,61 @@
 .modal-content{
 	background-color: red;
 }
+
+article{	
+	/* height: 35em; */
+	margin:2em 0 auto;
+	
+	header{	
+		height: 45%;
+		display:inline-block;
+		position:relative;	
+		
+		button {
+			position:absolute;
+			right:5%;
+			bottom:5%;
+		}
+	}
+	
+	p{
+		padding-top: .5em;	
+	}
+}
+
+.article-content-box{
+	height: 32em;	
+	border: 1px solid blue;
+}
+
+
+.article-content-box .glyphicon {
+	font-size:10em;	
+	color:#05a3cf;		
+}
+
+.article-body{	
+	
+	height: 55%;
+	margin: 0 auto;	
+	color: #000;
+	overflow: hidden;
+	padding:0 1.6em 0 1.6em ;	
+	background: rgb(212,228,239);
+background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
+}
+
+.carousel,
+.item,
+.active {
+    /* height: 100%; */
+	width: 100%;
+    /* margin-bottom: 60px; */
+}
+
+.carousel-inner {
+    height: 100%;
+}
