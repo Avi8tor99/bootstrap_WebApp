@@ -3,13 +3,44 @@
 	background-color: $light-color;
 	margin: 0 auto;
 	padding:20px;
+	
+	
+	.container{
+		display:flex;
+		flex-flow:row;
+		width: 100%;
+		height: 30%; 
+		border: 2px solid orange;
+		//margin:2em;
+		
+	}
+	
+	.left-content{
+		width: 60%;
+		border: 2px solid red;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 5%;
+		background-color: $secondary-color;
+		//color: $primary-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 1em;
+		height: 200px;
+		overflow: hidden;
+		
+		h1{
+			margin:0 auto;
+			color: $light-color;		
+		}
+		
+		h3 {
+			margin:0 auto;
+		}
+	}
+	
+	.right-content{
+		width: 40%;
+	}
 }
 
-.upload .container{
-	display:flex;
-	flex-flow:row;
-	width: 100%;
-	/* height: 300px; */
-	border: 2px solid orange;
-	margin:2em;
-}
