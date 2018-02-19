@@ -1,32 +1,53 @@
 .modal {	
   text-align: center;
-  padding: 0!important;
-}
-
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
-}
-
-.modal-dialog {
+  padding: 3em; 
+	/*:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;	 
+	} */
 	
+	fa-facebook-square {
+		font-size:2em;
+	}
+}
+
+.modal-dialog {	
   display: inline-block;
   text-align: left;
   vertical-align: middle;
 }
+
 .modal-header{
-	background-color: #fff;
+	padding: 2em;	
+	color:$light-color;
+	border: 0;
 }
 .modal-content{
-	background-color: red;
+	background-color: $primary-color;
+	//padding: 2em;
 }
 
-article{	
-	/* height: 35em; */
-	margin:2em 0 auto;
+.modal-body{
+	margin-left: 2em;
+	padding: 0 !important;
+	
+	textarea{
+		width:95%;
+		font-size: 1.5em;
+		padding: 1em 0 0 1em;
+		border-radius:5px;
+	}
+}
+
+.modal-footer {	
+	font-size: 3em;
+}
+
+article{		
+
+	margin: 0 0 1em 0;	
 	
 	header{	
 		height: 45%;
@@ -47,16 +68,14 @@ article{
 
 .article-content-box{
 	height: 32em;	
-	border: 1px solid blue;
+	border: 1px solid $primary-color;
+	
+	.glyphicon {
+		font-size:10em;		
+	}
 }
 
-
-.article-content-box .glyphicon {
-	font-size:10em;	
-	color:#05a3cf;		
-}
-
-.article-body{	
+.article-body{
 	
 	height: 55%;
 	margin: 0 auto;	
@@ -64,10 +83,10 @@ article{
 	overflow: hidden;
 	padding:0 1.6em 0 1.6em ;	
 	background: rgb(212,228,239);
-background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
-background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
+	background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+	background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
 }
 
 .carousel,

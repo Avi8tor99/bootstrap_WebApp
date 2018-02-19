@@ -10,7 +10,10 @@
 
     <!-- Bootstrap -->
     <link href="styles/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles/custom.css">
+	<link href="styles/custom.css" rel="stylesheet">
+	
+	<!--Font-awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,8 +28,7 @@
 	* Student ID: STU-00001519
 	* Date: 2018/02/03
 	* Ref: website link to code referenced or the book, authors name and page number
-	  http://jsfiddle.net/KyleMit/esm3jssy/ - for the NumberCircle class
-	  https://www.devexpress.com/ - Gary Rubio Pic - licensed images from 
+	  http://jsfiddle.net/KyleMit/esm3jssy/ - for the NumberCircle class	 
 	  https://www.w3schools.com/bootstrap/bootstrap_modal.asp and https://codepen.io/dimbslmh/full/mKfCc - for help on the modal and centering
 	 
 	-->
@@ -38,43 +40,33 @@
 				<a href="index.html">
 					<img class="img-responsive" src="images/streetart-logo.png" alt="streetfinder logo" >
 				</a>
-			</div> <!-- end logo -->
-			<div class="box"  style="border:2px solid green" >
-				
+			</div> <!-- end logo  -->
+			<div class="box" >				
 				<span class="glyphicon glyphicon-user circle" ></span>
-				<h2>Username</h2>
-				
+				<h2>Username</h2>				
 			</div>
 			</div>				
-		</div>	<!-- end header content -->	
-		
+		</div>	<!-- end header content	 -->		
 				
 	</header> <!-- end header -->
+	
 	<div class="carousel slide " id="carousel-example" data-ride="carousel">				
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="images/facial-2089059_1280.jpg" alt="Facial">
-				<div class="carousel-caption">
-					<h2>boy walking on monument</h2>
-				</div> <!--end .carousel-caption1-->
+				
 			</div> <!--end .item1-->
 			<div class="item">
 				<img src="images/ipoh-2676168_1280.jpg" alt="ipoh">
-				<div class="carousel-caption">
-					<h2>people in the hall</h2>
-				</div> <!--end .carousel-caption2-->
+				
 			</div> <!--end .item2-->
 			<div class="item">
 				<img src="images/lost-places-1928698_640.jpg" alt="lost places">
-				<div class="carousel-caption">
-					<h2>ladies at the subway</h2>
-				</div> <!--end .carousel-caption3-->
+				
 			</div> <!--end .item3-->
 			<div class="item">
 				<img src="images/street-art-2169576_1280.jpg" alt="street art">
-				<div class="carousel-caption">
-					<h2>ladies at the subway</h2>
-				</div> <!--end .carousel-caption3-->
+				
 			</div> <!--end .item3-->
 		</div> <!--end .carousel-inner-->
 		<!--Controls-->
@@ -85,9 +77,8 @@
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
 	</div> <!--end carosuel-->	
-	<div class="container">	
-
-		
+	
+	<div class="container">
 		<div class="row" >			
 			<h1 class="span12 text-center">How to use StreetArt Finder?</h1>		
 			
@@ -95,28 +86,25 @@
 				<div class="circle number"  >1</div>
 				<h2 class="visible-md visible-lg" >Take a photo</h2>	
 				<h4>Take a photo with your phone</h3>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<button class="btn btn-info">Learn More				</button> -->
+			
 			</section> <!--end of section1-->
-			<section class="col-xs-4 col-sm-4  col-md-4 box">
+			<section class="col-xs-4 col-sm-4 col-md-4 box">
 				<div class="circle number" >2</div>
 				<h2 class="visible-md visible-lg">Upload it</h2>	
 				<h4>Upload it to StreetArt Finder</h3>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<button class="btn btn-info">Learn More				</button> -->
+				
 			</section> <!--end of section1-->
-			<section class="col-xs-4 col-sm-4  col-md-4 box">
+			<section class="col-xs-4 col-sm-4 col-md-4 box">
 				<div class="circle number" >3</div>
 				<h2 class="visible-md visible-lg">Tag it</h2>	
 				<h4>Tag it so everyone can find it</h3>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<button class="btn btn-info">Learn More				</button> -->
+				
 			</section> <!--end of section1-->
 			
 		</div> <!--end of row2-->
-		<div class="row">
-			<article class="col-xs-12 col-sm-6 col-md-6">
-				<div class="article-content-box">
+		<div class="row" >
+			<article class="col-xs-6 col-sm-6 col-md-6" >
+				<div class="article-content-box" >
 					<header class="box">				
 						<span class="glyphicon glyphicon-picture"></span>
 						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-toggle="modal" data-target="#myModal">Share</button>
@@ -124,8 +112,8 @@
 				
 					<div class="article-body">
 						<h1 class="visible-md visible-lg">Cool Vista</h1>
-						<button  class="btn btn-warning btn-lg">Location</button>
-						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<button class="btn btn-warning btn-responsive">Location</button>
+						<button class="btn btn-danger btn-responsive">#Hashtag</button>
 						<p>Stu Unger is one of the biggest superstars to have
 							immerged from the professional poker world. Besides
 							being a true poker genius and a three time World Series
@@ -135,7 +123,7 @@
 					</div>		
 				</div>				
 			</article>
-			<article class="col-xs-12 col-sm-6 col-md-6">
+			<article class="col-xs-6 col-sm-6 col-md-6">
 				<div class="article-content-box">
 					<header class="box">				
 						<span class="glyphicon glyphicon-picture"></span>
@@ -143,9 +131,9 @@
 					</header>
 				
 					<div class="article-body">
-						<h1>Political Satire</h1>
-						<button  class="btn btn-warning btn-lg">Location</button>
-						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<h1 class="visible-md visible-lg">Political Satire</h1>
+						<button class="btn btn-warning btn-responsive">Location</button>
+						<button class="btn btn-danger btn-responsive">#Hashtag</button>
 						<p>Gas prices are soaring! This has resulted in elevated
 							travel expenses. If you travel by car, YOU have some
 							control over the costs.</p>
@@ -159,13 +147,13 @@
 				<div class="article-content-box">
 					<header class="box">				
 						<span class="glyphicon glyphicon-picture"></span>
-						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-toggle="modal" data-target="#myModal">Share</button>
+						<button type="button" class="btn btn-primary btn-lg">Share</button>
 					</header>
 				
 					<div class="article-body">
-						<h1>Buenos Aires Bunny</h1>
-						<button  class="btn btn-warning btn-lg">Location</button>
-						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<h1 class="visible-md visible-lg">Buenos Aires Bunny</h1>
+						<button class="btn btn-warning btn-responsive">Location</button>
+						<button class="btn btn-danger btn-responsive">#Hashtag</button>
 						<p>It is not always possible to jet off half way around the
 							world when you and your significant other are wishing
 							to go off on a private and romantic getaway. The great
@@ -183,9 +171,9 @@
 					</header>
 				
 					<div class="article-body">
-						<h1>Madrid Master</h1>
-						<button  class="btn btn-warning btn-lg">Location</button>
-						<button class="btn btn-danger btn-lg">#Hashtag</button>
+						<h1 class="visible-md visible-lg">Madrid Master</h1>
+						<button class="btn btn-warning btn-responsive">Location</button>
+						<button class="btn btn-danger btn-responsive">#Hashtag</button>
 						<p>“IT” (otherwise known as HD 36405.b) isn’t your
 							average “oddball” exo-solar planet made of rock that
 							wobbles on its end & zips around a nearby star in less
@@ -240,13 +228,16 @@
 		<div class="modal-content">
 		  <div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h1 class="modal-title">Modal Header</h4>
+			<h2 class="modal-title tex">Share Cool Vista</h2>
 		  </div>
 		  <div class="modal-body">
-			<p>Some text in the modal.</p>
+			<textarea  name="sharedvista" id="" cols="30" rows="10" placeholder="Found this in Berlin with StreetArt Finder!"></textarea>
 		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  <div class="modal-footer">		 
+			<i class="fab fa-facebook-square"></i>
+			<i class="fab fa-twitter-square"></i>
+			<i class="fas fa-camera-retro"></i>
+			
 		  </div>
 		</div>
 
