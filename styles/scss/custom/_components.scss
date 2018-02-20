@@ -100,3 +100,22 @@ article{
 .carousel-inner {
     height: 100%;
 }
+
+.panel-body {
+	label, input {
+		display: block;
+		width: 100%;
+	}
+	
+	.box{
+		border: 1px dashed $primary-color;
+		margin: .5em 0 .5em 0;
+		width: 50%;	
+padding-left: 0;
+	padding-right: 0;
+	}
+	
+	p{		
+		width: 100%;
+	}
+}
