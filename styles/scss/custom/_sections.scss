@@ -1,5 +1,5 @@
 .upload{
-	border: 2px solid red;
+	
 	background-color: $light-color;
 	margin: 0 auto;
 	padding:20px;
@@ -9,15 +9,13 @@
 		display:flex;
 		flex-flow:row;
 		width: 100%;
-		height: 30%; 
-		border: 2px solid orange;
+		height: 30%; 		
 		//margin:2em;
 		
 	}
 	
 	.left-content{
-		width: 60%;
-		border: 2px solid red;
+		width: 60%;		
 		margin-top: 5%;
 		margin-bottom: 5%;
 		margin-left: 5%;
