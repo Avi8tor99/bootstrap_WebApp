@@ -11,6 +11,22 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
+h1 {
+font-size: 36px; /* Some tweener fallback that doesn't look awful */ 
+  font-size: 5.9vw;
+}
+	
+h2 {
+ font-size: 30px; /* Some tweener fallback that doesn't look awful */ 
+
+  font-size: 4.0vh;
+}
+
+p {
+ font-size: 18px; /* Some tweener fallback that doesn't look awful */ 
+
+  font-size: 2vmin;
+}
 
 
 button {
@@ -36,27 +52,7 @@ textarea {
 	
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
-  .btn-responsive {
-    padding:4px 9px;    
-    line-height: 1.2;
-  }
-  @include  responsive-fonts($base-font-size / 1.14);
-}
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .btn-responsive {
-    padding:4px 9px;    
-    line-height: 1;
-  }
-  
-  .logo img {
-		width: 60%;
-		height: 90%;
-	}
-  
-  @include responsive-fonts($base-font-size / 1.5);
-}
 
 .top-buffer20 { margin-top:20px; }
 .top-buffer40 { margin-top:100px; }

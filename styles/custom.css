@@ -19,94 +19,62 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
-/* line 16, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 14, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+h1 {
+  font-size: 36px;
+  /* Some tweener fallback that doesn't look awful */
+  font-size: 5.9vw;
+}
+
+/* line 19, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+h2 {
+  font-size: 30px;
+  /* Some tweener fallback that doesn't look awful */
+  font-size: 4.0vh;
+}
+
+/* line 25, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+p {
+  font-size: 18px;
+  /* Some tweener fallback that doesn't look awful */
+  font-size: 2vmin;
+}
+
+/* line 32, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 button {
   text-transform: uppercase;
 }
 
-/* line 20, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 36, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .number {
   font: 24px "Verdana", "times new roman", sans serif;
   display: inline-block;
 }
 
-/* line 25, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 41, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
-/* line 29, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 45, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 textarea {
   resize: none;
 }
 
-/* line 33, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 49, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .glyphicon {
   color: #225574;
   font-size: 3em;
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
-  /* line 40, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
-  .btn-responsive {
-    padding: 4px 9px;
-    line-height: 1.2;
-  }
-  /* line 8, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h1 {
-    font-size: 2.63158em;
-  }
-  /* line 12, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h2 {
-    font-size: 1.75439em;
-  }
-  /* line 16, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h3 {
-    font-size: 1.31579em;
-  }
-  /* line 20, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  .btn-responsive {
-    font-size: 0.87719em;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* line 48, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
-  .btn-responsive {
-    padding: 4px 9px;
-    line-height: 1;
-  }
-  /* line 53, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
-  .logo img {
-    width: 60%;
-    height: 90%;
-  }
-  /* line 8, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h1 {
-    font-size: 2em;
-  }
-  /* line 12, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h2 {
-    font-size: 1.33333em;
-  }
-  /* line 16, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  h3 {
-    font-size: 1em;
-  }
-  /* line 20, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_mixins.scss */
-  .btn-responsive {
-    font-size: 0.66667em;
-  }
-}
-
-/* line 61, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 57, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .top-buffer20 {
   margin-top: 20px;
 }
 
-/* line 62, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 58, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .top-buffer40 {
   margin-top: 100px;
 }
@@ -280,7 +248,7 @@ article p {
 
 /* line 69, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .article-content-box {
-  height: 32em;
+  height: 34em;
   border: 1px solid #00aff0;
 }
 
@@ -387,6 +355,27 @@ footer container {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* line 34, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom.scss */
+  .btn-responsive {
+    padding: 4px 9px;
+    line-height: 1;
+  }
+  /* line 39, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom.scss */
+  .logo img {
+    width: 60%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+  /* line 50, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom.scss */
+  .btn-responsive {
+    padding: 4px 9px;
+    line-height: 1.2;
+  }
 }
 
 /*# sourceMappingURL=../custom.map */
