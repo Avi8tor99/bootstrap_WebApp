@@ -1,7 +1,11 @@
+html {
+  @include fluid-type(font-size, $min-screen-size, $max-screen-size, 16px, 18px);
+}
+
 body{
 	color: $dark-color;
 	max-width: 1280px;
-	font: 600 normal $base-font-size $base-font-stack;
+	font-style: $base-font-stack;
 	line-height: 1.4em;
 	
 	background: rgb(254,255,255);
@@ -11,21 +15,25 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
+
 h1 {
-font-size: 36px; /* Some tweener fallback that doesn't look awful */ 
-  font-size: 5.9vw;
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 18px, 36px);
 }
-	
+
 h2 {
- font-size: 30px; /* Some tweener fallback that doesn't look awful */ 
-
-  font-size: 4.0vh;
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 16px, 34px);
 }
 
-p {
- font-size: 18px; /* Some tweener fallback that doesn't look awful */ 
+h3 {
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 14px, 32px);
+}
 
-  font-size: 2vmin;
+h4 {
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 12px, 30px);
+}
+
+p{
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 6px, 18px);
 }
 
 
@@ -48,11 +56,9 @@ textarea {
 
 .glyphicon {
 	color: $glyphicon-color;
-	font-size:3em;
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 14px, 48px);
 	
 }
 
 
-
-.top-buffer20 { margin-top:20px; }
 .top-buffer40 { margin-top:100px; }

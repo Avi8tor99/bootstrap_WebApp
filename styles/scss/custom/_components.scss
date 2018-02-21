@@ -61,9 +61,9 @@ article{
 		}
 	}
 	
-	p{
+	/*p{
 		padding-top: .5em;	
-	}
+	} */
 }
 
 .article-content-box{
@@ -71,7 +71,7 @@ article{
 	border: 1px solid $primary-color;
 	
 	.glyphicon {
-		font-size:10em;		
+		@include fluid-type(font-size, $min-screen-size, $max-screen-size, 50px, 150px);
 	}
 }
 
