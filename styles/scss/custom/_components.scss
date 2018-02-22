@@ -50,17 +50,20 @@ article{
 	margin: 0 0 1em 0;	
 	//@include fluid-type(padding-top padding-right padding-bottom padding-left, 20em, 70em, 1em, 2em);
 	
-	.article-content-box{
-		height: 30em;	
+	.article-content-box{	
+	
+		@include fluid-type(height, 20em, 70em, 20em, 26em);	
 		border: 1px solid $primary-color;
 		
 		.glyphicon {
-			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 4em, 60em);
-		}
+border-radius: 10px;		
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 6em, 60em);			
+		} 
 	}
 	
 	header{	
-		@include fluid-type(padding-bottom padding-top, 20em, 70em, 2em, 4em);
+	
+		//@include fluid-type(padding-bottom padding-top, 20em, 70em, 55em, 4em);
 		height: 45%;	
 		display:inline-block;
 		position:relative;	
@@ -73,8 +76,9 @@ article{
 	}
 	
 	.article-body{
+	padding: 15px;
 		height: 55%;
-		@include fluid-type(padding-right padding-left, 20em, 70em, 1em, 2em);	
+		//@include fluid-type(padding-right padding-left, 20em, 70em, .75em, 1em);	
 		margin: 0 auto;	
 		color: #000;
 		overflow: hidden;			
@@ -83,6 +87,10 @@ article{
 		background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
 		background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
+		
+		h2{
+			margin-top:0;
+		}
 	}
 	
 	

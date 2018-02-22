@@ -5,7 +5,7 @@ html {
 body{
 	color: $dark-color;
 	max-width: $max-screen-size;	
-	line-height: 1.4em;
+	//line-height: 1.4em;
 	
 	font-family: $base-font-stack;
 	background: rgb(254,255,255);
@@ -17,23 +17,32 @@ body{
 
 
 h1 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 20px, 36px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 2em, 22em);
 }
 
 h2 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 16px, 34px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.5em, 18em);
 }
 
 h3 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 14px, 32px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.17em, 14em);
 }
 
 h4 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 10px, 26px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.12em, 12em);
+}
+
+h5 {
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .83em, 6em);
+}
+
+h6 {
+
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .75em, 3em);
 }
 
 p{
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 8px, 18px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .73em, 1em);
 }
 
 
@@ -57,9 +66,9 @@ textarea {
 
 .glyphicon {
 	color: $glyphicon-color;
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 14px, 48px);
+	//@include fluid-type(font-size, $min-screen-size, $max-screen-size, 14px, 48px);
 	
 }
 
-
-.top-buffer40 { margin-top:100px; }
+.top-buffer20{ margin-top:20px; }
+.top-buffer100 { margin-top:100px; }

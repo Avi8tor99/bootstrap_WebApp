@@ -3,27 +3,37 @@ header{
 	width: 100%;	
 	background: $primary-color;
 	
-	h2{
-		display:inline-block;
+	
+	
+	.header-content{	
+		display:flex;
+		flex-flow:row;
+		justify-content: space-between;	
+		height:150px;	
+	}
+	
+	.logo{
+		padding-left: 2em;
+		width:40%;
+		
+		img{		
+			width:100%;
+			height:100%;
+		} 
+	}
+	
+	.profile{
+		padding-top:2em;
+		
+		h4{
+			display:inline-block;	
+		}
 	}
 }
 
-.header-content{	
-	display:flex;
-	flex-flow:row;
-	justify-content: space-between;	
-	height:150px;	
-}
 
-.logo{
-	padding-left: 2em;
-	width:40%;
-	
-	img{		
-		width:100%;
-		height:100%;
-	} 
-}
+
+
 
 
 
