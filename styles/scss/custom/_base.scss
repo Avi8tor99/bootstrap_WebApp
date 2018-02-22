@@ -4,10 +4,10 @@ html {
 
 body{
 	color: $dark-color;
-	max-width: 1280px;
-	font-style: $base-font-stack;
+	max-width: $max-screen-size;	
 	line-height: 1.4em;
 	
+	font-family: $base-font-stack;
 	background: rgb(254,255,255);
 	background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
@@ -17,7 +17,7 @@ body{
 
 
 h1 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 18px, 36px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 20px, 36px);
 }
 
 h2 {
@@ -29,11 +29,11 @@ h3 {
 }
 
 h4 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 12px, 30px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 10px, 26px);
 }
 
 p{
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 6px, 18px);
+	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 8px, 18px);
 }
 
 
@@ -41,9 +41,10 @@ button {
 	text-transform:uppercase;
 }
 
-.number {	
-   font: $number-font-size $number-font-stack;
-   display: inline-block;
+.number {
+	line-height: 1;	
+	font-family: $number-font-stack;
+	display: inline-block;	
 }
 
 input, textarea, button {

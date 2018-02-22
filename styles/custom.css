@@ -6,31 +6,31 @@
 /* Base - base styles, variables, mixins */
 /* Background colours */
 /* Glyphicon color */
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 html {
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   html {
     font-size: calc(16px + 2 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   html {
     font-size: 18px;
   }
 }
 
-/* line 5, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 5, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 body {
   color: #626262;
-  max-width: 1280px;
-  font-style: "Roboto", "ariel", "times new roman", "sans-serif";
+  max-width: 1366px;
   line-height: 1.4em;
+  font-family: "Roboto", "ariel", "times new roman", "sans-serif";
   background: #feffff;
   background: -moz-linear-gradient(top, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
   background: -webkit-linear-gradient(top, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
@@ -38,162 +38,177 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
-/* line 19, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 19, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 h1 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 19, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h1 {
-    font-size: calc(18px + 18 * (100vw - 320px) / 1046);
+    font-size: calc(20px + 16 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 19, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 19, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h1 {
     font-size: 36px;
   }
 }
 
-/* line 23, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 23, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 h2 {
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 23, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 23, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h2 {
     font-size: calc(16px + 18 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 23, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 23, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h2 {
     font-size: 34px;
   }
 }
 
-/* line 27, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 27, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 h3 {
   font-size: 14px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 27, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 27, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h3 {
     font-size: calc(14px + 18 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 27, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 27, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h3 {
     font-size: 32px;
   }
 }
 
-/* line 31, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 31, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 h4 {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 31, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 31, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h4 {
-    font-size: calc(12px + 18 * (100vw - 320px) / 1046);
+    font-size: calc(10px + 16 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 31, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 31, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   h4 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
-/* line 35, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 35, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 p {
-  font-size: 6px;
+  font-size: 8px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 35, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 35, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   p {
-    font-size: calc(6px + 12 * (100vw - 320px) / 1046);
+    font-size: calc(8px + 10 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 35, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 35, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   p {
     font-size: 18px;
   }
 }
 
-/* line 40, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 40, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 button {
   text-transform: uppercase;
 }
 
-/* line 44, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 44, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .number {
-  font: 24px "Verdana", "times new roman", sans serif;
+  line-height: 1;
+  font-family: "Verdana", "times new roman", sans serif;
   display: inline-block;
 }
 
-/* line 49, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 50, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
-/* line 53, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 54, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 textarea {
   resize: none;
 }
 
-/* line 57, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 58, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .glyphicon {
   color: #225574;
   font-size: 14px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 57, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 58, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   .glyphicon {
     font-size: calc(14px + 34 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 57, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+  /* line 58, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
   .glyphicon {
     font-size: 48px;
   }
 }
 
-/* line 64, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_base.scss */
+/* line 65, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_base.scss */
 .top-buffer40 {
   margin-top: 100px;
 }
 
 /* Modules - Individual site components */
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
 .box {
-  padding: 2em;
+  padding: 3em;
   text-align: center;
 }
 
-/* line 9, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+@media screen and (min-width: 320px) {
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+  .box {
+    padding: calc(3em + -1 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+  .box {
+    padding: 2em;
+  }
+}
+
+/* line 9, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
 .box :hover {
   /* background: #FDF9F3; */
 }
 
-/* line 14, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+/* line 14, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
 .fill {
   width: 100%;
   height: 100%;
@@ -204,7 +219,7 @@ textarea {
   -o-background-size: cover;
 }
 
-/* line 25, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_shapes.scss */
+/* line 25, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_shapes.scss */
 .circle {
   border-radius: 50%;
   /* behavior: url(PIE.htc); /* remove if you don't care about IE8 */
@@ -214,10 +229,10 @@ textarea {
   background: #fff;
   border: 2px solid black;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_buttons.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_buttons.scss */
 .btn-responsive {
   padding: 10px 16px;
   line-height: 1.33333;
@@ -226,27 +241,27 @@ textarea {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_buttons.scss */
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_buttons.scss */
   .btn-responsive {
     font-size: calc(10px + 6 * (100vw - 320px) / 1046);
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_buttons.scss */
+  /* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_buttons.scss */
   .btn-responsive {
     font-size: 16px;
   }
 }
 
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload {
   background-color: #FCFCFC;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* line 8, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 8, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload .container {
   display: flex;
   flex-flow: row;
@@ -254,7 +269,7 @@ textarea {
   height: 30%;
 }
 
-/* line 17, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 17, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload .left-content {
   width: 60%;
   margin-top: 5%;
@@ -268,23 +283,24 @@ textarea {
   overflow: hidden;
 }
 
-/* line 30, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 30, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload .left-content h1 {
   margin: 0 auto;
   color: #FCFCFC;
 }
 
-/* line 35, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 35, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload .left-content h3 {
   margin: 0 auto;
 }
 
-/* line 40, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_sections.scss */
+/* line 40, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_sections.scss */
 .upload .right-content {
+  margin-right: 5%;
   width: 40%;
 }
 
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal {
   text-align: center;
   padding: 3em;
@@ -296,37 +312,37 @@ textarea {
 	} */
 }
 
-/* line 11, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 11, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal fa-facebook-square {
   font-size: 2em;
 }
 
-/* line 16, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 16, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-dialog {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
 }
 
-/* line 22, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 22, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-header {
   padding: 2em;
   color: #FCFCFC;
   border: 0;
 }
 
-/* line 27, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 27, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-content {
   background-color: #00aff0;
 }
 
-/* line 32, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 32, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-body {
   margin-left: 2em;
   padding: 0 !important;
 }
 
-/* line 36, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 36, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-body textarea {
   width: 95%;
   font-size: 1.5em;
@@ -334,65 +350,81 @@ textarea {
   border-radius: 5px;
 }
 
-/* line 44, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 44, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .modal-footer {
   font-size: 3em;
 }
 
-/* line 48, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 48, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 article {
   margin: 0 0 1em 0;
-  /*p{
-		padding-top: .5em;	
-	} */
 }
 
-/* line 52, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 53, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+article .article-content-box {
+  height: 30em;
+  border: 1px solid #00aff0;
+}
+
+/* line 57, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+article .article-content-box .glyphicon {
+  font-size: 4em;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 57, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article .article-content-box .glyphicon {
+    font-size: calc(4em + 56 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 57, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article .article-content-box .glyphicon {
+    font-size: 60em;
+  }
+}
+
+/* line 62, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 article header {
+  padding-bottom: 2em;
+  padding-top: 2em;
   height: 45%;
   display: inline-block;
   position: relative;
 }
 
-/* line 57, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+@media screen and (min-width: 20em) {
+  /* line 62, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article header {
+    padding-bottom: calc(2em + 2 * (100vw - 20em) / 50);
+    padding-top: calc(2em + 2 * (100vw - 20em) / 50);
+  }
+}
+
+@media screen and (min-width: 70em) {
+  /* line 62, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article header {
+    padding-bottom: 4em;
+    padding-top: 4em;
+  }
+}
+
+/* line 68, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 article header button {
   position: absolute;
   right: 5%;
   bottom: 5%;
 }
 
-/* line 69, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
-.article-content-box {
-  height: 34em;
-  border: 1px solid #00aff0;
-}
-
-/* line 73, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
-.article-content-box .glyphicon {
-  font-size: 50px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 73, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
-  .article-content-box .glyphicon {
-    font-size: calc(50px + 100 * (100vw - 320px) / 1046);
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  /* line 73, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
-  .article-content-box .glyphicon {
-    font-size: 150px;
-  }
-}
-
-/* line 78, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
-.article-body {
+/* line 75, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+article .article-body {
   height: 55%;
+  padding-right: 1em;
+  padding-left: 1em;
   margin: 0 auto;
   color: #000;
   overflow: hidden;
-  padding: 0 1.6em 0 1.6em;
   background: #d4e4ef;
   background: -moz-linear-gradient(left, #d4e4ef 0%, #86aecc 100%);
   background: -webkit-linear-gradient(left, #d4e4ef 0%, #86aecc 100%);
@@ -400,7 +432,23 @@ article header button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
 }
 
-/* line 92, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+@media screen and (min-width: 20em) {
+  /* line 75, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article .article-body {
+    padding-right: calc(1em + 1 * (100vw - 20em) / 50);
+    padding-left: calc(1em + 1 * (100vw - 20em) / 50);
+  }
+}
+
+@media screen and (min-width: 70em) {
+  /* line 75, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
+  article .article-body {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+/* line 94, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .carousel,
 .item,
 .active {
@@ -409,18 +457,18 @@ article header button {
   /* margin-bottom: 60px; */
 }
 
-/* line 100, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 102, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .carousel-inner {
   height: 100%;
 }
 
-/* line 105, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 107, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .panel-body label, .panel-body input {
   display: block;
   width: 100%;
 }
 
-/* line 110, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 112, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .panel-body .box {
   border: 1px dashed #00aff0;
   margin: .5em 0 .5em 0;
@@ -429,25 +477,25 @@ article header button {
   padding-right: 0;
 }
 
-/* line 118, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_components.scss */
+/* line 120, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_components.scss */
 .panel-body p {
   width: 100%;
 }
 
 /* Layouts - Page layout styles */
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_header.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_header.scss */
 header {
   margin: 0;
   width: 100%;
   background: #00aff0;
 }
 
-/* line 6, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_header.scss */
+/* line 6, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_header.scss */
 header h2 {
   display: inline-block;
 }
 
-/* line 11, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_header.scss */
+/* line 11, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_header.scss */
 .header-content {
   display: flex;
   flex-flow: row;
@@ -455,25 +503,25 @@ header h2 {
   height: 150px;
 }
 
-/* line 18, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_header.scss */
+/* line 18, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_header.scss */
 .logo {
   padding-left: 2em;
   width: 40%;
 }
 
-/* line 22, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_header.scss */
+/* line 22, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_header.scss */
 .logo img {
   width: 100%;
   height: 100%;
 }
 
-/* line 1, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_footer.scss */
+/* line 1, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_footer.scss */
 footer {
   height: 20rem;
   background-color: #000;
 }
 
-/* line 6, C:/Users/Adrian/source/repos/Degree/FDWM/bootstrap_webapp/styles/scss/custom/_footer.scss */
+/* line 6, C:/Users/a146049/Source/repos/dsa/bootstrap_webapp/styles/scss/custom/_footer.scss */
 footer container {
   border: 2px solid yrllow;
   width: 100%;

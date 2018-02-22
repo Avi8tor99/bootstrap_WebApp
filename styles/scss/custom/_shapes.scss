@@ -1,6 +1,6 @@
 .box{
 	//background:$primary-color;
-	padding:2em;
+	 @include fluid-type(padding, $min-screen-size, $max-screen-size, 3em, 2em);
 	//margin:0 auto;
 	//border:1px solid #eeeeee;
 	
@@ -32,6 +32,6 @@
 	//color: #0000f2;
 	border: 2px solid black;
 	text-align: center;	
-	font-size:3em;
+	font-size:2em;
 }
 
