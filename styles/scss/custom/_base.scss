@@ -1,12 +1,9 @@
-html {
-  @include fluid-type(font-size, $min-screen-size, $max-screen-size, 16px, 18px);
-}
-
 body{
+	//margin: 0 auto; 
 	color: $dark-color;
 	max-width: $max-screen-size;	
 	//line-height: 1.4em;
-	
+	//font-size: $base-font-size;
 	font-family: $base-font-stack;
 	background: rgb(254,255,255);
 	background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%);
@@ -15,36 +12,22 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
+h1  { font-size: 2em;}
+h2  { font-size: 1.5em ;}
+h3  { font-size: 1.17em;}
+h5  { font-size: .83em ;}
+h6  { font-size: .75em ;}
 
-h1 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 2em, 22em);
+h1, h2, h3, h4, h5, h6 { font-weight: bolder }
+
+p{	
+	line-height: $baseline;
+	margin-bottom: $baseline;
 }
 
-h2 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.5em, 18em);
+*{
+	box-sizing: border-box;
 }
-
-h3 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.17em, 14em);
-}
-
-h4 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.12em, 12em);
-}
-
-h5 {
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .83em, 6em);
-}
-
-h6 {
-
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .75em, 3em);
-}
-
-p{
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, .73em, 1em);
-}
-
 
 button {
 	text-transform:uppercase;
