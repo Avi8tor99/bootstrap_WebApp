@@ -3,7 +3,7 @@ body{
 	color: $dark-color;
 	max-width: $max-screen-size;	
 	//line-height: 1.4em;
-	//font-size: $base-font-size;
+	font-size: $base-font-size;
 	font-family: $base-font-stack;
 	background: rgb(254,255,255);
 	background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%);
@@ -12,18 +12,16 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
 }
 
-h1  { font-size: 2em;}
-h2  { font-size: 1.5em ;}
-h3  { font-size: 1.17em;}
-h5  { font-size: .83em ;}
-h6  { font-size: .75em ;}
+h1  { font-size: 3em;}
+h2  { font-size: 2.5em ;}
+h3  { font-size: 2.25em;}
+h4  { font-size: 2em ;}
+h5  { font-size: 1.6em ;}
+h6  { font-size: 1em ;}
 
 h1, h2, h3, h4, h5, h6 { font-weight: bolder }
 
-p{	
-	line-height: $baseline;
-	margin-bottom: $baseline;
-}
+
 
 *{
 	box-sizing: border-box;

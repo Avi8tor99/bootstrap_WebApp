@@ -45,58 +45,58 @@
 	font-size: 3em;
 }
 
-article{		
+article{	
 
-	//margin: 0 0 1em 0;	
+	html{
+		@include fluid-type(font-size, $min-screen-size, $max-screen-size, $minFont, $maxFont);
+	}
+
+	margin: 1em 0 1em 0;	
 	//@include fluid-type(padding-top padding-right padding-bottom padding-left, 20em, 70em, 1em, 2em);
-	@include fluid-type(font-size, $min-screen-size, $max-screen-size, $minFont, $maxFont);	
+	
 	
 	.article-content-box{		
 		box-sizing: border-box;					
-		@include fluid-type(height, 20em, 70em, 10em, 26em);	
+		@include fluid-type(height, $min-screen-size, $max-screen-size, 40em, 60em);	
 		border: 1px solid $primary-color;
-		
+			
 		.glyphicon {		
-		//	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 6em, 60em);			
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 9em, 60em);			
 		} 
 	}
 	
 	header{
-		//@include fluid-type(padding-bottom padding-top, 20em, 70em, 55em, 4em);
-		height: 45%;	
-		//display:inline-block;
-		//position:relative;	
+		//@include fluid-type(padding-bottom padding-top, $min-screen-size, $max-screen-size, 55em, 4em);
+		height: 40%;	
+		display:inline-block;
+		position:relative;	
 		
-		//button {
-		//	position:absolute;
-		//	right:5%;
-		//	bottom:5%;
-		//}
+		button {
+			position:absolute;
+			right:5%;
+			bottom:5%;
+		}
 	}
 	
 	.article-body{
-		//line-height: $baseline;
-		//padding: $baseline 0;
-		//padding: 15px auto;
+		border: 2px solid red;					
 		height: 55%;
-		//@include fluid-type(padding-right padding-left, 20em, 70em, .75em, 1em);	
-		margin: 0 auto;	
-		//color: #000;
-		//overflow: hidden;			
-		//background: rgb(212,228,239);
-		//background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		//background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
-		//background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
-		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );
-		//@include fluid-type(width, $min-screen-size, $max-screen-size, 26rem, 48rem);	
-		width: 25rem;
-		//h2{
-		//	margin-top:0;
-		//}
+		@include fluid-type(padding-right padding-left, $min-screen-size, $max-screen-size, 1em, 1em);			
+		color: #000;
+		overflow: hidden;			
+		background: rgb(212,228,239);
+		background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+		background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );		
+		width: 100%;
+		h2{
+			margin-top:.5em;
+		}
 		
 		p{
 			
-			//@include fluid-type(font-size, $min-screen-size, $max-screen-size, 8px, 26px);			
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.25em, 4.5em);			
 			//line-height: $baseline;
 			//margin-bottom: $baseline;
 		}
@@ -126,12 +126,11 @@ article{
 		width: 100%;
 	}
 	
-	.box{
+	.box{			
 		border: 1px dashed $primary-color;
 		margin: .5em 0 .5em 0;
 		width: 50%;	
-padding-left: 0;
-	padding-right: 0;
+		@include fluid-type(padding-top padding-right padding-bottom padding-left, $min-screen-size, $max-screen-size, 3.2em, 3em);
 	}
 	
 	p{		

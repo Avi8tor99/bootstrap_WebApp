@@ -2,5 +2,6 @@
     line-height: 1.33333;
     border-radius: 6px;
 	@include fluid-type(font-size, $min-screen-size, $max-screen-size, 10px, 16px);
+	//@include fluid-type(padding-top padding-right padding-bottom padding-left, $min-screen-size, $max-screen-size, 6px, 16px);
 }
   

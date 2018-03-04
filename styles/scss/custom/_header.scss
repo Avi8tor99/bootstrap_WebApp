@@ -9,7 +9,7 @@ header{
 		display:flex;
 		flex-flow:row;
 		justify-content: space-between;	
-		height:150px;	
+		//height:150px;	
 	}
 	
 	.logo{
@@ -22,9 +22,10 @@ header{
 		} 
 	}
 	
-	.profile{
-		padding-top:2em;
-		
+	.profile{							
+		width:30%;
+		text-align:center;
+		@include fluid-type(margin-top, $min-screen-size, $max-screen-size, 10px, 48px);
 		h4{
 			display:inline-block;	
 		}
