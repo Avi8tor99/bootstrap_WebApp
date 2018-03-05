@@ -1,8 +1,7 @@
 header{		
 	margin: 0; 
 	width: 100%;	
-	background: $primary-color;
-	
+	background: $primary-color;	
 	
 	
 	.header-content{	
@@ -25,7 +24,8 @@ header{
 	.profile{							
 		width:30%;
 		text-align:center;
-		@include fluid-type(margin-top, $min-screen-size, $max-screen-size, 10px, 48px);
+		@include fluid-type(margin-top, $min-screen-size, $max-screen-size, 10px, 40px);
+		
 		h4{
 			display:inline-block;	
 		}

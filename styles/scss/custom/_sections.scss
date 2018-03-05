@@ -43,8 +43,7 @@
 		
 		.glyphicon {		
 			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 2em, 30em);			
-		} 
-		
+		} 		
 		
 	}
 }

@@ -31,8 +31,7 @@
 
 .modal-body{
 	margin-left: 2em;
-	padding: 0 !important;
-	
+	padding: 0 !important;	
 	textarea{
 		width:95%;
 		font-size: 1.5em;
@@ -51,17 +50,17 @@ article{
 		@include fluid-type(font-size, $min-screen-size, $max-screen-size, $minFont, $maxFont);
 	}
 
-	margin: 1em 0 1em 0;	
+	margin: 1.2em 0 0 0;	
 	//@include fluid-type(padding-top padding-right padding-bottom padding-left, 20em, 70em, 1em, 2em);
 	
 	
 	.article-content-box{		
-		box-sizing: border-box;					
-		@include fluid-type(height, $min-screen-size, $max-screen-size, 40em, 60em);	
-		border: 1px solid $primary-color;
+		//box-sizing: border-box;					
+		@include fluid-type(height, $min-screen-size, $max-screen-size, 40em, 50em);	
+		//border: 1px solid $primary-color;
 			
 		.glyphicon {		
-			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 9em, 60em);			
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 9em, 15em);			
 		} 
 	}
 	
@@ -78,10 +77,9 @@ article{
 		}
 	}
 	
-	.article-body{
-		border: 2px solid red;					
+	.article-body{						
 		height: 55%;
-		@include fluid-type(padding-right padding-left, $min-screen-size, $max-screen-size, 1em, 1em);			
+		@include fluid-type(padding-right padding-left, $min-screen-size, $max-screen-size, 1em, 2.5em);			
 		color: #000;
 		overflow: hidden;			
 		background: rgb(212,228,239);
@@ -90,21 +88,15 @@ article{
 		background: linear-gradient(to right, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 );		
 		width: 100%;
+		
 		h2{
 			margin-top:.5em;
 		}
 		
-		p{
-			
-			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.25em, 4.5em);			
-			//line-height: $baseline;
-			//margin-bottom: $baseline;
+		p{			
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 1.30em, 3.2em);						
 		}
-	}
-	
-	
-	
-	
+	}	
 }
 
 
@@ -131,6 +123,10 @@ article{
 		margin: .5em 0 .5em 0;
 		width: 50%;	
 		@include fluid-type(padding-top padding-right padding-bottom padding-left, $min-screen-size, $max-screen-size, 3.2em, 3em);
+	}
+	
+	button {
+		width: 100%;
 	}
 	
 	p{		
