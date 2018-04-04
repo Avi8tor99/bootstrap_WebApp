@@ -16,7 +16,7 @@
 	
 	.left-content{
 		width: 60%;		
-		margin-top: 5%;
+		margin-top: 3em;
 		margin-bottom: 9em;
 		margin-left: 1em;
 		background-color: $secondary-color;
@@ -42,7 +42,7 @@
 		width: 40%;
 		
 		.glyphicon {		
-			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 2em, 30em);			
+			@include fluid-type(font-size, $min-screen-size, $max-screen-size, 2em, 3.2em);			
 		} 		
 		
 	}
